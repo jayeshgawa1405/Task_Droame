@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book a Drone Photoshoot</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		body {
+			font-family: Arial, sans-serif;
+			background-color: transparent;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		form {
+			max-width: 500px;
+			box-shadow: 50px;
+			margin: 50px auto;
+			background-color: transparent;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input[type=text], input[type=email], textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			transition: background-color 0.3s ease;
+		}
+		input[type=Button] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			transition: background-color 0.3s ease;
+		}
+		input[type=submit]:hover {
+			background-color: #3e8e41;
+		}
+		* {
+				margin: :0;
+				padding: 0;
+		}
+		/*.background-image{
+
+			background-image: url('./d1.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			height: 100vh; 
+		}
+
+		.get{
+  			width: 200px; 
+  			height: 50px; 
+  		*/
+  		body{
+  			animation: change 10s infinite;
+
+  		}
+  		@keyframes change {
+  				0%{background-color: #cf8446;}
+  				25%{background-color: #f0fc9d;}
+  				50%{background-color: #9dfcb5;}
+  				75%{background-color: #9dfce0;}
+  				100%{background-color: #63b5db;}
+			}				
+}
+	</style>
+</head>
+<body class="body">
+	<div class="background-image">
+	<div class="w3-container w3-center w3-animate-right">
+   <h1><i><b>Book Your Drone Shoot!<b></i></h1>
+ 	</div>
+	
+		<form action="submit.php" method="POST" >
+		<label for="id">Client id:</label>
+		<input type="text" id="id" name="id" required>
+		<label for="name">Name of Client:</label>
+		<input type="text" id="name" name="name" required>
+		
+		<label for="email">Email of Client:</label>
+		<input type="email" id="email" name="email" required>
+		
+		<label for="phone">Phone:</label>
+		<input type="text" id="phone" name="phone" required>
+		
+		<label for="location">Shoot Location:</label>
+		<textarea id="location" name="location" rows="4" required></textarea>
+
+		
+		
+		<label for="date"> Date of Shoot:</label>
+		<input type="date" id="date" name="date" required>
+		
+		<div>
+			<center><input type="submit" value="Submit"></center></div>
+
+	</form>
+	<form action="retrive.php" method="POST" style="background-color: transparent;">
+		
+		<center><input type="submit" value="Get" class="get"></center>
+
+	</form>
+
+	</div>
+		
+
+</body>
+
+	
+
+
+</body>
+</html>

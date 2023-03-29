@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update User</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #73faa9;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		form {
+			max-width: 500px;
+			margin: 50px auto;
+			background-color: white;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		input[type=text], input[type=email], input[type=phoneno], input[type=location], textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			transition: background-color 0.3s ease;
+		}
+		input[type=Button] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			transition: background-color 0.3s ease;
+		}
+		
+
+	</style>
+</head>
+<body bgcolor="#73faa9">
+	<center><h2>Update Customers</h2></center>
+	<form method="POST" action="updateform.php">
+		<label>ID:</label>
+		<input type="text" name="id" required><br><br>
+		<label>Username:</label>
+		<input type="text" name="name" required><br><br>
+		<label>Email:</label>
+		<input type="email" name="email" required><br><br>
+		<label>Phoneno:</label>
+		<input type="phoneno" name="phone" required><br><br>
+		<label>Location:</label>
+		<input type="location" name="location" row="4" required><br><br>
+		<label>Date:</label>
+		<input type="date" name="date" required><br><br>
+
+
+		<center><input type="submit" value="Update"></center>
+
+	</form>
+</body>
+</html>
